@@ -55,7 +55,7 @@ void loop()
 {
   sensors.requestTemperatures();
   double celsius = sensors.getTempCByIndex(0);
-  Serial.print(celsius);
+  Serial.println(celsius);
 
   WiFiClient httpclient;
   if (httpclient.connect(servername, 80))
